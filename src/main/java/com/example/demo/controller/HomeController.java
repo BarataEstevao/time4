@@ -22,7 +22,7 @@ public class HomeController {
     }
 
     @GetMapping("/readme")
-    public ModelAndView readme(){
+    public ModelAndView readmE(){
 
         ModelAndView model2 = new ModelAndView("readme");
         return model2;
