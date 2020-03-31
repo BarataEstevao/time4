@@ -21,12 +21,7 @@ public class HomeController {
         return model;
     }
 
-    @GetMapping("/implementacao")
-    public ModelAndView implementacao(){
 
-        ModelAndView model2 = new ModelAndView("implementacao");
-        return model2;
-    }
 
 
 
