@@ -21,13 +21,10 @@ public class RestController {
     }
 
 
-    @GetMapping("/primeFactors")
-    public ResponseEntity<ArrayList> primeFactors(){
-        Map<String,Integer> map = new HashMap<String,Integer>();
-        map.get(retorno(128));
-        return new ResponseEntity<ArrayList>((ArrayList) map, HttpStatus.OK);
-    }
-    public ArrayList retorno(int numero){
+
+
+
+  public ArrayList retorno(int numero){
            int x=0;
         ArrayList VECTOR=new ArrayList();
            int soma=2;
