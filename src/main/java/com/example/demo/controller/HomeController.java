@@ -21,9 +21,12 @@ public class HomeController {
         return model;
     }
 
+    @GetMapping("/astroport")
+    public ModelAndView astrop(){
 
-
-
+        ModelAndView model7 = new ModelAndView("astroport");
+        return model7;
+    }
 
     @GetMapping("/readme")
     public ModelAndView readmE(){
