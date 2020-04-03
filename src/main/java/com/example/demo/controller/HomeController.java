@@ -28,8 +28,8 @@ public class HomeController {
         return model7;
     }
 
-    @GetMapping("/readme")
-    public ModelAndView readmE(){
+    @GetMapping("/")
+    public ModelAndView readme(){
 
         ModelAndView model2 = new ModelAndView("readme");
         return model2;
