@@ -11,6 +11,7 @@ public class HomeController {
     public ModelAndView index(){
         ModelAndView model = new ModelAndView("index");
         model.addObject("message", "Hello Yose");
+        model.addObject("message", "welcome the yosethegame");
         return model;
     }
 
@@ -24,15 +25,15 @@ public class HomeController {
     @GetMapping("/astroport")
     public ModelAndView astrop(){
 
-        ModelAndView model7 = new ModelAndView("astroport");
-        return model7;
+        ModelAndView model = new ModelAndView("astroport");
+        return model;
     }
 
     @GetMapping("/readme")
     public ModelAndView readme(){
 
-        ModelAndView model12 = new ModelAndView("readme");
-        return model12;
+        ModelAndView model = new ModelAndView("readme");
+        return model;
     }
 
 
