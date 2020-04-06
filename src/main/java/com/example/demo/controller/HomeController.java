@@ -11,7 +11,7 @@ public class HomeController {
     public ModelAndView index(){
         ModelAndView model = new ModelAndView("index");
         model.addObject("message", "Hello Yose");
-        model.addObject("message", "welcome the yosethegame");
+
         return model;
     }
 
