@@ -127,8 +127,8 @@
     <h1 id="astroport-name">Astroport</h1>
 
     <div class="row">
-        <div id="gate-1" class="four columns gate occupied">
-            Gate 1 : <span id="ship-1">Gate-1</span>
+        <div id="gate-1" class="four columns gate free">
+            Gate 1 : <span id="ship-1"></span>
         </div>
         <div id="gate-2" class="four columns gate free">
             Gate 2 : <span id="ship-2"></span>
@@ -138,12 +138,12 @@
         </div>
     </div>
     <div class="row">
-        <form  action="/astroport" method="GET">
+        <form  action="astroport.html" method="GET">
             <input id="ship" name="ship" type="text" class="u-full-width" placeholder="Shipname ..." onkeyup="shipChanged()" onchange="shipChanged()" />
             <button id="dock" type="submit" class="button-primary">Dock</button>
         </form>
     </div>
-    <section id="info" class="row info ">
+    <section id="info" class="row info hidden">
         Ship is added to Gate 1.
     </section>
 </div>
