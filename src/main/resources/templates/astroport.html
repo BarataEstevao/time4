@@ -44,13 +44,14 @@
 
         infoSection.setAttribute("class", classes.join(" "));
     }
+    var string=document.createAttribute(ship)
 </script>
 
 <h1 id="astroport-name">Astroport</h1>
 
 <div class="row">
     <div id="gate-1" class="four columns gate {{#if ship}}occupied{{else}}free{{/if}}">
-        Gate 1 : <span id="ship-1">ship</span>
+        Gate 1 : <span id="ship-1"><script>string</script></span>
     </div>
     <div id="gate-2" class="four columns gate free">
         Gate 2 : <span id="ship-2"></span>
@@ -60,7 +61,7 @@
     </div>
 </div>
 <div class="row">
-    <form  action="/astroport" method="GET">
+    <form  action="astroport.html" method="GET">
         <input id="ship" name="ship" type="text" class="u-full-width" placeholder="Shipname ..." onkeyup="shipChanged()" onchange="shipChanged()" />
         <button id="dock" type="submit" class="button-primary">Dock</button>
     </form>
