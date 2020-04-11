@@ -7,7 +7,7 @@ router.get("/", function(request, response){
 	var ship = "";
 	if(shipname !== undefined)
 		ship = shipname;
-	response.render("templates/astroport", {ship: ship});
+	response.render("main/resources/templates/astroport", {ship: ship});
 	response.setHeader("Content-Type", "text/html");
 });
 
