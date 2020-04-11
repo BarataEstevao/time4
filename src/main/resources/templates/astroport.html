@@ -4,6 +4,42 @@
     <meta charset="UTF-8">
     <title>astroport</title>
 </head>
+<style type="text/css">
+    .row
+    {
+        margin-bottom: 1em;
+    }
+
+    .gate
+    {
+        padding: 15px;
+        border: 1px solid #888888;
+        border-radius: 5px;
+    }
+
+    .free
+    {
+        background-color: #CCFFCC;
+    }
+
+    .occupied
+    {
+        background-color: #FFFCCC;
+    }
+
+    .info
+    {
+        padding: 15px;
+        background-color: #99CCFF;
+        border-radius: 5px;
+    }
+
+    .hidden
+    {
+        display: none;
+    }
+</style>
+
 
 <script>
     function shipChanged(){
@@ -23,7 +59,7 @@
 
 <div class="row">
     <div id="gate-1" class="four columns gate {{#if ship}}occupied{{else}}free{{/if}}">
-        Gate 1 : <span id="ship-1"> </span>
+        Gate 1 : <span id="ship-1">{{ship}}</span>
     </div>
     <div id="gate-2" class="four columns gate free">
         Gate 2 : <span id="ship-2"></span>
