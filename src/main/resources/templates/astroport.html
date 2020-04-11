@@ -7,9 +7,17 @@
 <body id="astroport-name">
 <p id="astroport-name1"> bem vindo ao  astroport</p>
 
-<p id="gate-1" d="ship-1"></p>
-<p id="gate-2" d="ship-2"></p>
-<p id="gate-3" d="ship-3"></p>
+<div class="row">
+    <div id="gate-1" class="four columns gate {{#if ship}}occupied{{else}}free{{/if}}">
+        Gate 1 : <span id="ship-1">{{ship}}</span>
+    </div>
+    <div id="gate-2" class="four columns gate free">
+        Gate 2 : <span id="ship-2"></span>
+    </div>
+    <div id="gate-3" class="four columns gate free">
+        Gate 3 : <span id="ship-3"></span>
+    </div>
+</div>
 
 
 
